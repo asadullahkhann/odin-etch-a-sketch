@@ -18,3 +18,12 @@ function getRandomRGB() {
     }
     return `rgb(${randomRGBValue.join(',')})`;
 }
+
+function makeBgDarker(e) {
+    let filter = e.target.style.filter;
+    let brightnessLevel = parseInt(filter.split('(')[1]);
+    e.target.style.filter = `brightness(${brightnessLevel - 10}%)`;
+    if(brightnessLevel === 0) {
+        e.target.removeEventListener('moueseover', makeBgDarker);
+    }
+}
