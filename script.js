@@ -27,3 +27,9 @@ function makeBgDarker(e) {
         e.target.removeEventListener('moueseover', makeBgDarker);
     }
 }
+
+function handleMouseOver(e) {
+    e.target.style.backgroundColor = getRandomRGB();
+    e.target.addEventListener('mouseover', makeBgDarker);
+    e.target.removeEventListener('mouseover', handleMouseOver);
+}
