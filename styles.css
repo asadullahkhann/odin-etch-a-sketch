@@ -1,3 +1,10 @@
-h1, .input-container, p, .btn-container {
+body {
     text-align: center;
+}
+
+.grid-container {
+    border: 2px solid;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 }
