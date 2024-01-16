@@ -39,3 +39,8 @@ button {
     font-weight: bold;
     font-style: italic;
 }
+
+button:active {
+    color: white;
+    background-color: black;
+}
