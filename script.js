@@ -50,3 +50,10 @@ function addSquaresToGridContainer(num = 16) {
 }
 
 addSquaresToGridContainer();
+
+inputEl.addEventListener('change', (e) => {
+    const inputValue = e.target.value;
+    para.textContent = `${inputValue}x${inputValue}`;
+    gridContainer.replaceChildren();
+    addSquaresToGridContainer(inputValue);
+});
