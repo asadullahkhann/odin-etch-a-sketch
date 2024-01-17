@@ -24,11 +24,12 @@ function makeBgDarker(e) {
     let brightnessLevel = parseInt(filter.split('(')[1]);
     e.target.style.filter = `brightness(${brightnessLevel - 10}%)`;
     if(brightnessLevel === 0) {
-        e.target.removeEventListener('moueseover', makeBgDarker);
+        e.target.removeEventListener('mouseover', makeBgDarker);
     }
 }
 
 function handleMouseOver(e) {
+    e.target.style.filter = 'brightness(100%)';
     e.target.style.backgroundColor = getRandomRGB();
     e.target.addEventListener('mouseover', makeBgDarker);
     e.target.removeEventListener('mouseover', handleMouseOver);
