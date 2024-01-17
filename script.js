@@ -34,3 +34,19 @@ function handleMouseOver(e) {
     e.target.addEventListener('mouseover', makeBgDarker);
     e.target.removeEventListener('mouseover', handleMouseOver);
 }
+
+function addSquaresToGridContainer(num = 16) {
+    for(let i = 0; i < num; i++) {
+        const row = document.createElement('div');
+        row.style.display = 'flex';
+        for(let j = 0; j < num; j++) {
+            const col = document.createElement('div');
+            col.style.cssText = `width: ${400/num}px; height: ${400/num}px;`;
+            col.addEventListener('mouseover', handleMouseOver);
+            row.appendChild(col);     
+        }
+        gridContainer.appendChild(row);
+    }
+}
+
+addSquaresToGridContainer();
