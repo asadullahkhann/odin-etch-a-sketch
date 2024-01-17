@@ -57,3 +57,10 @@ inputEl.addEventListener('change', (e) => {
     gridContainer.replaceChildren();
     addSquaresToGridContainer(inputValue);
 });
+
+resetBtn.addEventListener('click', () => {
+    inputEl.value = 16;
+    para.textContent = '16x16';
+    gridContainer.replaceChildren();
+    addSquaresToGridContainer();
+});
