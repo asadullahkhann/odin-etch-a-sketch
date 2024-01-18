@@ -41,7 +41,7 @@ function addSquaresToGridContainer(num = 16) {
         row.style.display = 'flex';
         for(let j = 0; j < num; j++) {
             const col = document.createElement('div');
-            col.style.cssText = `width: ${400/num}px; height: ${400/num}px;`;
+            col.style.cssText = `width: ${370/num}px; height: ${370/num}px;`;
             col.addEventListener('mouseover', handleMouseOver);
             row.appendChild(col);     
         }
