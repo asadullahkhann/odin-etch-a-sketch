@@ -1,5 +1,12 @@
 body {
     text-align: center;
+    background-color: gray;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
@@ -7,7 +14,6 @@ body {
     background-color: lightgray;
     width: 400px;
     height: 400px;
-    margin: 0 auto;
 }
 
 h1 {
