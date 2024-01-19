@@ -22,7 +22,6 @@ body {
 
 h1 {
     font-size: 44px;
-    font-style: oblique;
     margin: 20px 0;
 }
 
@@ -43,12 +42,12 @@ p {
 button {
     margin-top: 6px;
     padding: 2px 24px;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 600;
 }
 
 button:active {
-    color: white;
+    color: #FFFFF7;
     background-color: black;
 }
