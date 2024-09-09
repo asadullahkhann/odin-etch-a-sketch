@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'angel';
+    src: url('./fonts/ANGEL___.ttf');
+}
+
+@font-face {
+    font-family: 'ktf-roadbrush';
+    src: url('./fonts/KTF-Roadbrush.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-italic';
+    src: url('./fonts/Roboto-Italic.ttf');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,32 +41,28 @@ main {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 5rem;
+    font-family: 'angel';
+    font-weight: normal;
 }
 
 p {
     display: flex;
     flex-direction: column;
-}
-
-h1, p, button {
-    font-family: 'Font Awesome 6 Free';
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'roboto-italic';
 }
 
 input {
     accent-color: black;
 }
 
-p {
-    font-size: 24px;
-    font-weight: 700;
-}
-
 button {
-    padding: 2px 24px;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'ktf-roadbrush';
 }
 
 button:active {
