@@ -1,16 +1,21 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     text-align: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFFFF7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
 }
 
 .grid-container {
@@ -22,7 +27,11 @@ body {
 
 h1 {
     font-size: 44px;
-    margin: 20px 0;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
 }
 
 h1, p, button {
@@ -36,11 +45,9 @@ input {
 p {
     font-size: 24px;
     font-weight: 700;
-    margin: 0;
 }
 
 button {
-    margin-top: 6px;
     padding: 2px 24px;
     border-radius: 4px;
     font-size: 16px;
