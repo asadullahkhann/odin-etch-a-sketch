@@ -1,6 +1,6 @@
 const inputEl = document.querySelector('input');
 
-const para = document.querySelector('p');
+const para = document.querySelector('p:last-of-type');
 
 const gridContainer = document.querySelector('.grid-container');
 

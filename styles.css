@@ -46,9 +46,7 @@ h1 {
     font-weight: normal;
 }
 
-p {
-    display: flex;
-    flex-direction: column;
+p:last-of-type {
     font-size: 1.6rem;
     font-weight: 700;
     font-family: 'roboto-italic';
